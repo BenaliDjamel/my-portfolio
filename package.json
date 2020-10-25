@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://benalidjamel.github.io/my-portfolio/",
+  
   "scripts": {
-    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css",
+    "prepublish": "npm build",
+    "publish": "gh-pages -d build"
   },
   "author": "benali djamel",
   "license": "ISC",
