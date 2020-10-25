@@ -1,0 +1,18 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "author": "benali djamel",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^3.1.0",
+    "tailwindcss": "^1.8.10"
+  },
+  "devDependencies": {
+    "mixitup": "^3.3.1"
+  }
+}

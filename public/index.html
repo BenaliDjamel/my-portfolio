@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="bg-gray-100" style=" font-family: 'Montserrat', sans-serif;">
+
+    <nav class="flex items-center justify-between flex-wrap bg-white  p-6">
+        <div class="container px-4 mx-auto flex flex-wrap items-center  justify-between">
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+                <span class="font-semibold text-xl tracking-tight text-gray-800">Benali Djamel</span>
+            </div>
+            <div class="block lg:hidden">
+                <button id="burger-btn"
+                    class="flex items-center px-3 py-2 border rounded text-purple-800 border-purple-800  hover:text-purple-800 hover:border-purple-800 hover:bg-purple-400">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div id="nav-links" class="hidden w-full flex-grow lg:flex lg:items-center  lg:w-auto">
+
+                <div class=" ml-auto md:mr-10">
+                    <a href="#"
+                        class="block mt-4 lg:inline-block lg:mt-0 font-medium text-gray-800 hover:text-purple-600 mr-6">
+                        Home
+                    </a>
+                    <a href="#"
+                        class=" my-skills-btn block mt-4 lg:inline-block font-medium lg:mt-0 text-gray-800 hover:text-purple-600 mr-6">
+                        Skills
+                    </a>
+
+                    <a href="#"
+                        class="my-qualification-btn block mt-4 lg:inline-block font-medium lg:mt-0 text-gray-800 hover:text-purple-600 mr-6">
+                        Qualification
+                    </a>
+                    <a href="#"
+                        class="contact-me-btn block mt-4 lg:inline-block font-medium lg:mt-0 text-gray-800 hover:text-purple-600 mr-6">
+                        Contact
+                    </a>
+
+                    <a href="#"
+                        class="about-me-btn block mt-4 lg:inline-block font-medium lg:mt-0 text-gray-800 hover:text-purple-600 mr-6">
+                        About
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="py-8 md:pt-16 md:pb-32 sm:px-6 lg:px-8 bg-gradient-to-r to-blue-500 from-teal-400 " style="
+            background-color: #f1f1f1;
+        border-radius: 0 0 50% 50% / 40px;">
+            <div class="grid grid-cols-1  md:grid-cols-3 mt-4 md:mt-8">
+                <div class="flex justify-center" data-aos="fade-up-right" data-aos-duration="1000">
+                    <img src="./imgs/djamel.jpg" alt="benali djamel" srcset=""
+                        class="rounded-full w-40 h-40  md:w-48 md:h-48 border-4 border-white shadow-xl">
+                </div>
+
+                <div class="col-span-2 ml-1">
+                    <div class="py-4 text-sm text-center mt-4 md:text-left md:text-3xl ">
+                        Hi I'm Benali Djamel
+                        <span class="text-gray-900 font-bold border-b-4 border-orange-300">a Software Engineer</span>.
+                    </div>
+                    <p class="text-gray-900 text-lg text-center md:text-left">
+                        I transform your ideas into software products, </br> And you will get <span
+                            class="benefites font-bold border-b-4 border-orange-300">more customers</span>.
+                    </p>
+
+                    <div class="flex justify-center items-center md:justify-start mt-8">
+                        <button
+                            class="bg-purple-700 hover:bg-purple-700 text-white text-sm font-semibold py-1 px-4  md:py-2  rounded-full w-auto inline-flex items-center focus:outline-none focus:border-none my-project-btn">
+                            My Projects <svg class="animate-bounce fill-current w-4 h-4 ml-2" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                            </svg>
+                        </button>
+                        <a href="https://drive.google.com/file/d/1mEJwwVrfmUDYvB0Yr3qLJzJIxT7CkcE6/view?usp=sharing"
+                            target="_blank" download='Benali_Djamel.pdf'
+                            class="bg-white text-gray-700 shadow-sm hover:bg-purple-700 hover:text-white text-sm font-semibold py-1 px-4  md:py-2 ml-2 rounded-full w-auto focus:outline-none focus:border-none download-cv">
+                            My CV
+                        </a>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <!-- start  What i do  section -->
+
+    <section class="container mx-auto px-6">
+
+        <div class="text-center font-bold text-4xl mb-10 mt-20">What <span
+                class="text-purple-600 border-b-4 border-orange-300">I DO</span>
+        </div>
+
+        <div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 pb-10   lg:grid-cols-3 gap-6">
+                <div class=" relative shadow-xl h-auto lg:my-10 pt-4 pb-10    relative rounded bg-gradient-to-r from-blue-600 to-purple-500"
+                    data-aos="fade-up" data-aos-duration="1500">
+                    <div
+                        class="bg-gray-200 rounded-full absolute top-0 ml-4 mt-2 px-3 py-2 text-white bg-gradient-to-r  from-purple-600 to-purple-800 font-bold">
+                        Web Development</div>
+                    <div class="px-4 mb-10 mt-16">
+                        <p class="text-white leading-relaxed text-base">
+                            I do web development most of time with laravel & vuejs and sometimes nodejs, now i'm
+                            focusing on backend stuff and below is what i use in projects .
+                        </p>
+                    </div>
+                    <div class="px-4 absolute bottom-0 left-0">
+                        <div class="inline-block bg-gray-300 rounded-full p-2 mr-3 mb-3">
+                            <img class="w-6 h-6 rounded" src="./imgs/vue.png" alt="Avatar of Jonathan Reinink">
+                        </div>
+                        <div class="inline-block bg-gray-300 rounded-full p-2 mr-3 mb-3">
+                            <img class="w-6 h-6 rounded" src="./imgs/react.svg" alt="Avatar of Jonathan Reinink">
+                        </div>
+
+                        <div class="inline-block bg-gray-300 rounded-full p-2 mr-3 mb-3">
+                            <img class="w-6 h-6 rounded" src="./imgs/laravel.svg" alt="Avatar of Jonathan Reinink">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class=" relative shadow-xl h-auto lg:my-10 pt-4 pb-10   relative rounded bg-gradient-to-r from-blue-500 to-teal-500 "
+                    data-aos="fade-down" data-aos-duration="1500">
+                    <div
+                        class=" bg-gray-200 rounded-full absolute top-0 ml-4 mt-2 px-3 py-2 text-white bg-gradient-to-r  from-purple-800 to-purple-600  font-bold">
+                        Mobile Development</div>
+                    <div class="px-4 mb-10 mt-16">
+                        <p class="text-white leading-relaxed text-base">
+                            I do mobile development just for fun with flutter because i think flutter is amazing
+                            framework to build cross-platform & good for startups.
+                        </p>
+                    </div>
+                    <div class="px-4 absolute bottom-0 left-0 ">
+                        <div class="inline-block bg-gray-300 rounded-full p-2 mr-3 mb-3">
+                            <img class="w-6 h-6 rounded" src="./imgs/flutter_96dp.png" alt="Avatar of Jonathan Reinink">
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class=" relative shadow-xl h-auto lg:my-10 pt-4 pb-10   relative rounded bg-gradient-to-r from-blue-400 to-blue-600"
+                    data-aos="zoom-in" data-aos-duration="1500">
+                    <div
+                        class="bg-gray-200 rounded-full absolute top-0 ml-4 mt-2 px-3 py-2 text-white bg-gradient-to-r  from-purple-600 to-purple-800 font-bold">
+                        Reading & sharing </div>
+                    <div class="px-4 mb-10 mt-16">
+                        <p class="text-white leading-relaxed text-base">
+                            In my free time i enjoyed reading software engineering books like clean code , refactoring
+                            by fowller, secure by design , and i share, discuss what i learn with people.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- end  What i do  section -->
+
+    <!-- start My Skills  section -->
+    <section class="my-skills bg-gray-200">
+        <div class="container mx-auto px-6 h-auto  pb-16 " data-aos="fade-up">
+            <div class="text-center font-bold text-4xl my-20 pt-10">My <span
+                    class="text-purple-600 border-b-4 border-orange-300">Skills</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+
+                <div class="md:mt-6">
+                    <h1 class="font-bold text-center text-xl mb-4">Front End</h1>
+                    <div class="shadow-xl p-3 mb-4 font-semibold rounded bg-white">
+                        <div class="mb-2">
+                            Html/Css
+
+                        </div>
+
+
+                        <div class=" w-full bg-purple-300 rounded">
+                            <div class="bg-purple-700 text-xs leading-none py-1 mb-2 rounded-l text-center text-white"
+                                style="width: 80%">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="shadow-xl p-3 mb-4 font-semibold rounded bg-white">
+                        <div class="mb-2">
+                            Vuejs
+                        </div>
+
+                        <div class=" w-full bg-purple-300 rounded">
+                            <div class="bg-purple-700 text-xs leading-none py-1 mb-2 rounded-l text-center text-white"
+                                style="width: 85%">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="shadow-xl p-3 mb-4 font-semibold rounded bg-white">
+                        <div class="mb-2">
+                            React
+                        </div>
+
+                        <div class=" w-full bg-purple-300 rounded">
+                            <div class="bg-purple-700 text-xs leading-none py-1 mb-2 rounded-l text-center text-white"
+                                style="width: 50%">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="">
+                    <h1 class="font-bold text-center text-xl mb-4">Back End</h1>
+                    <div class="shadow-xl p-3 mb-4 font-semibold rounded bg-white">
+                        <div class="mb-2">
+                            Laravel
+                        </div>
+
+                        <div class=" w-full bg-purple-300 rounded">
+                            <div class="bg-purple-700 text-xs leading-none py-1 mb-2 rounded-l text-center text-white"
+                                style="width: 80%">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="shadow-xl p-3 mb-4 font-semibold rounded bg-white">
+                        <div class="mb-2">
+                            js (Nodejs)
+                        </div>
+
+                        <div class=" w-full bg-purple-300 rounded">
+                            <div class="bg-purple-700 text-xs leading-none py-1 mb-2 rounded-l text-center text-white"
+                                style="width: 68%">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <div class="md:mt-6">
+                    <h1 class="font-bold text-center text-xl mb-4">Other</h1>
+                    <div class="shadow-xl p-3 mb-4 font-semibold rounded bg-white">
+                        <div class="mb-2">
+                            Flutter
+                        </div>
+
+                        <div class=" w-full bg-purple-300 rounded">
+                            <div class="bg-purple-700 text-xs leading-none py-1 mb-2 rounded-l text-center text-white"
+                                style="width: 60%">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="shadow-xl p-3 mb-4 font-semibold rounded bg-white">
+                        <div class="mb-2">
+                            Mysql
+                        </div>
+
+                        <div class=" w-full bg-purple-300 rounded">
+                            <div class="bg-purple-700 text-xs leading-none py-1 mb-2 rounded-l text-center text-white"
+                                style="width: 65%">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="shadow-xl p-3 mb-4 font-semibold rounded bg-white">
+                        <div class="mb-2">
+                            mongodb
+                        </div>
+
+                        <div class=" w-full bg-purple-300 rounded">
+                            <div class="bg-purple-700 text-xs leading-none py-1 mb-2 rounded-l text-center text-white"
+                                style="width: 40%">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="shadow-xl p-3 mb-4 font-semibold rounded bg-white">
+                        <div class="mb-2">
+                            Adobe XD
+                        </div>
+
+                        <div class=" w-full bg-purple-300 rounded">
+                            <div class="bg-purple-700 text-xs leading-none py-1 mb-2 rounded-l text-center text-white"
+                                style="width: 45%">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    </section>
+    <!-- end My Skills section -->
+
+    <!-- start Recent work section -->
+    <section class="my-work">
+        <div class="container mx-auto px-6 pb-6">
+            <div class="text-center font-bold text-4xl my-10 pt-10">Recent <span
+                    class="text-purple-600 border-b-4 border-orange-300">Work</span>
+            </div>
+
+
+
+            <div class="flex justify-center flex-row ">
+                <button
+                    class="bg-gray-100   md:font-semibold text-xs md:px-4 md:py-2 px-2 py-1 rounded-full border-2 border-purple-700 hover:border-none hover:text-white hover:bg-purple-700  focus:outline-none mr-2 mb-4"
+                    type="button" style="transition: all .15s ease" data-filter="all">
+                    All
+                </button>
+
+                <button
+                    class="bg-gray-100   md:font-semibold text-xs md:px-4 md:py-2 px-2 py-1 rounded-full border-2 border-purple-700 hover:border-none hover:text-white hover:bg-purple-700 hover:border-none hover:text-white focus:outline-none mr-2 mb-4 "
+                    type="button" style="transition: all .15s ease" data-filter=".web">
+                    Web Development
+                </button>
+
+                <button
+                    class="bg-gray-100  border-2 border-purple-700  md:font-semibold text-xs md:px-4 md:py-2 px-2 py-1 rounded-full   hover:border-none hover:text-white hover:bg-purple-700 hover:border-none hover:text-white focus:outline-none mr-2  mb-4"
+                    type="button" style="transition: all .15s ease" data-filter=".mobile">
+                    Mobile Development
+                </button>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-12 md:mt-16 portfolio h-auto" data-aos="fade-down"
+                data-aos-easing="linear" data-aos-duration="1500">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg mix web cursor-pointer  hover:opacity-75 transition duration-300 "
+                    style="transition: all .15s ease" onclick="toggleModal('modal-id')">
+
+                    <img class="w-full" src="./imgs/app.gif" alt="Sunset in the mountains">
+                </div>
+
+                <div class="max-w-sm rounded overflow-hidden shadow-lg mix web cursor-pointer  hover:opacity-75 transition duration-300 "
+                    style="transition: all .15s ease" onclick="toggleModal('modal-id')">
+                    <img class="w-full" src="./imgs/app.gif" alt="Sunset in the mountains">
+                </div>
+
+                <div class="max-w-sm rounded overflow-hidden shadow-lg mix web cursor-pointer  hover:opacity-75 transition duration-300"
+                    style="transition: all .15s ease" onclick="toggleModal('modal-id')">
+                    <img class="w-full" src="./imgs/app.gif" alt="Sunset in the mountains">
+                </div>
+
+                <div class="max-w-sm rounded overflow-hidden shadow-lg mix mobile cursor-pointer  hover:opacity-75 transition duration-300 "
+                    style="transition: all .15s ease" onclick="toggleModal('modal-id')">
+                    <img class="w-full" src="./imgs/app.gif" alt="Sunset in the mountains">
+                </div>
+
+                <div class="max-w-sm rounded overflow-hidden shadow-lg mix mobile cursor-pointer  hover:opacity-75 transition duration-300"
+                    style="transition: all .15s ease" onclick="toggleModal('modal-id')">
+                    <img class="w-full" src="./imgs/app.gif" alt="Sunset in the mountains">
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+    <!-- end  Recent work section -->
+
+    <!-- start  resume -->
+
+    <section class="bg-white my-qualification">
+        <div class="container mx-auto px-6 pb-6">
+
+            <div class="text-center font-bold text-4xl mt-10 mb-16 pt-10">My <span
+                    class="text-purple-600 border-b-4 border-orange-300">Qualification</span>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h1 class="font-bold text-center text-xl">Education</h1>
+
+                    <div class="flex bg-white shadow-lg rounded-lg mx-4 md:mx-auto my-10 max-w-md md:max-w-2xl ">
+                        <!--horizantil margin is just for display-->
+                        <div class="flex items-start px-4 py-8">
+                            <img class="w-12 h-12 rounded-full object-cover mr-4 shadow" src="./imgs/univ.png"
+                                alt="avatar">
+                            <div>
+                                <div class="flex items-center justify-between">
+                                    <h2 class="text-sm font-semibold text-gray-900 -mt-1">University Constantine 02
+                                    </h2>
+                                    <small class="text-sm text-gray-700 ">2019 - 2020</small>
+                                </div>
+                                <p class="mt-3 text-gray-700 text-sm">
+                                    Master Degree at University of Constantine 2 (Information and Communication
+                                    Technologies).
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex bg-white shadow-lg rounded-lg mx-4 md:mx-auto my-10 max-w-md md:max-w-2xl ">
+                        <!--horizantil margin is just for display-->
+                        <div class="flex items-start px-4 py-8">
+                            <img class="w-12 h-12 rounded-full object-cover mr-4 shadow" src="./imgs/univ.png"
+                                alt="avatar">
+
+                            <div>
+                                <div class="flex items-center justify-between">
+                                    <h2 class="text-sm font-semibold text-gray-900 -mt-1">University Constantine 02
+                                    </h2>
+                                    <small class="text-sm text-gray-700">2018 - 2019</small>
+                                </div>
+                                <p class="mt-3 text-gray-700 text-sm">
+                                    Licence degree at University of Constantine 2 (Information technology)
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex bg-white shadow-lg rounded-lg mx-4 md:mx-auto my-10 max-w-md md:max-w-2xl ">
+                        <!--horizantil margin is just for display-->
+                        <div class="flex items-start px-4 py-8">
+                            <div>
+                                <div class="flex items-center justify-between">
+                                    <h2 class="text-sm font-semibold text-gray-900 -mt-1">BAC </h2>
+                                    <small class="text-sm text-gray-700">2015</small>
+                                </div>
+                                <p class="mt-3 text-gray-700 text-sm">
+                                    BAC and Graduation from the high shcool (Zakaria Medjdoub)
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h1 class="font-bold text-center text-xl">Experience</h1>
+
+                    <div class="flex bg-white shadow-lg rounded-lg mx-4 md:mx-auto my-10 max-w-md md:max-w-2xl ">
+                        <!--horizantil margin is just for display-->
+                        <div class="flex items-start px-4 py-8">
+                            <div>
+                                <div class="flex items-center justify-between">
+                                    <h2 class="text-sm font-semibold text-gray-900 -mt-1">Desktop Developer </h2>
+                                    <small class="text-sm text-gray-700">2016</small>
+                                </div>
+                                <p class="mt-3 text-gray-700 text-sm">
+                                    I started developing desktop application with <span
+                                        class="text-gray-800">javafx</span>.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex bg-white shadow-lg rounded-lg mx-4 md:mx-auto my-10 max-w-md md:max-w-2xl ">
+                        <!--horizantil margin is just for display-->
+                        <div class="flex items-start px-4 py-8">
+                            <div>
+                                <div class="flex items-center justify-between">
+                                    <h2 class="text-sm font-semibold text-gray-900 -mt-1">Web Developer </h2>
+                                    <small class="text-sm text-gray-700">2017</small>
+                                </div>
+                                <p class="mt-3 text-gray-700 text-sm">
+                                    I started developing web application with <span class="text-gray-800"> laravel,
+                                        vuejs, nodejs</span> (self employed).
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!--   <div class="flex justify-between">
+                <svg class="h-56 w-56 -mb-20 md:-ml-56 lg:-ml-40 " viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#f0fff4" d="M56,-68.5C69.4,-55.4,75.1,-34.8,73.3,-17.1C71.5,0.7,62.2,15.6,51.7,26.1C41.2,36.7,29.5,42.9,19.4,41.5C9.2,40.1,0.6,31.1,-16.6,31.2C-33.7,31.2,-59.4,40.1,-71.3,34.1C-83.3,28.1,-81.4,7,-77.1,-13C-72.9,-33,-66.2,-52,-52.9,-65.1C-39.7,-78.3,-19.8,-85.6,0.7,-86.4C21.3,-87.3,42.5,-81.6,56,-68.5Z" transform="translate(100 100)" />
+                  </svg>
+                 
+
+             </div> -->
+
+        </div>
+
+    </section>
+
+
+
+    <!-- end  resume -->
+
+    <section class="bg-gray-200 about-me">
+        <div class="container mx-auto px-6 pb-16">
+            <div class="text-center font-bold text-4xl mb-10 pt-16">About <span
+                    class="text-purple-600 border-b-4 border-orange-300">Me</span>
+            </div>
+
+            <div class="flex mt-24 ">
+                <div class=" flex-auto rounded shadow-lg p-10  bg-gradient-to-r from-blue-500 to-teal-500 ">
+                    <div class="w-full pt-1 pb-5 mb-4" data-aos="fade-up-right">
+                        <div
+                            class="overflow-hidden  border-4 border-gray-400  rounded-full w-24 h-24 -mt-24 mx-auto shadow-xl">
+                            <img src="./imgs/djamel.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <p class="text-white text-xl leading-relaxed ">
+                        My name's <span class="font-bold text-orange-300 tracking-widest">Benali Djamel</span>.
+                        I'm a web designer and developer
+                        based in Southampton, UK.
+                        </br>
+                        During the day
+                        I’m the lead developer a
+                        t a local agency.</br> During the evenings
+                        I spend my time working on freelance
+                        projects and building my own products.
+
+                    </p>
+                    <div class="text-white mt-10 "><span
+                            class="font-bold text-xl  text-orange-300 tracking-widest">Email:</span>
+                        djamelbenalidev@gmail.com.</div>
+                    <div class="text-white mt-2"><span
+                            class="font-bold text-xl text-orange-300 tracking-widest">Phone:</span> (+213) 656779404.
+                    </div>
+
+                    <div class="mt-10" data-aos="fade-up-right">
+                        <div class="inline-block bg-gray-300 rounded-full p-2 mr-3 mb-3 cursor-pointer">
+                            <img class="w-6 h-6 rounded " src="./imgs/facebook.svg" alt="Avatar of Jonathan Reinink">
+                        </div>
+                        <div class="inline-block bg-gray-300 rounded-full p-2 mr-3 mb-3 cursor-pointer">
+                            <img class="w-6 h-6 rounded " src="./imgs/twitterblue.svg" alt="Avatar of Jonathan Reinink">
+                        </div>
+                        <div class="inline-block bg-gray-300 rounded-full p-2 mr-3 mb-3 cursor-pointer">
+                            <img class="w-6 h-6 rounded " src="./imgs/linkedin.svg" alt="Avatar of Jonathan Reinink">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact-me">
+        <div class="container mx-auto px-6 pb-10">
+            <div class="text-center font-bold text-4xl my-10 ">Contact <span
+                    class="text-purple-600 border-b-4 border-orange-300">Me</span>
+            </div>
+            <form class="bg-white shadow-md rounded px-8 pt-10 md:pb-4">
+                <div class="flex flex-wrap -mx-3 mb-6">
+
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="grid-first-name">
+                            Name
+                        </label>
+                        <input
+                            class=" block w-full  bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                            id="grid-first-name" type="text" placeholder="Jane">
+                        <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
+                    </div>
+
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="grid-first-name">
+                            Email
+                        </label>
+                        <input
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                            id="grid-first-name" type="text" placeholder="Jane">
+
+                    </div>
+
+                    <div class="w-full  mt-4 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="grid-last-name">
+                            Message
+                        </label>
+
+                        <textarea
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white resize-none"
+                            name="body" required rows="5">Type Your Message</textarea>
+
+                    </div>
+
+                    <div class="w-full px-3 mb-6 md:mb-0 mt-4 ">
+                        <button
+                            class="bg-purple-600 hover:bg-purple-700 text-white rounded-full font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            type="button">
+                            Submit
+                        </button>
+
+                    </div>
+                </div>
+
+            </form>
+
+
+
+        </div>
+    </section>
+
+
+    <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none "
+        id="modal-id">
+        <div class="relative w-auto my-6 mx-auto max-w-6xl">
+            <!--content-->
+            <div
+                class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                <!--header-->
+                <div class="flex items-start justify-between p-5 rounded-t">
+                    <h3 class="text-3xl font-semibold ">
+                        Social Media
+                    </h3>
+                    <button
+                        class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                        onclick="toggleModal('modal-id')">
+                        <span
+                            class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                            ×
+                        </span>
+                    </button>
+                </div>
+                <!--body-->
+                <div>
+                    <div class="grid grid-cols-2 mt-2">
+                        <div class="flex justify-center items-center">
+                            <div class="swiper-container image-slider ">
+                                <div class="swiper-wrapper ">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide "><img src="./imgs/app.gif"></div>
+                                    <div class="swiper-slide "><img src="./imgs/app.gif"></div>
+                                    <div class="swiper-slide "><img src="./imgs/app.gif"></div>
+                                    ...
+                                </div>
+
+                                <div
+                                    class="hidden md:flex swiper-button-prev bg-white w-16 h-16 text-xs rounded-full text-purple-600">
+                                </div>
+                                <div
+                                    class="hidden md:flex swiper-button-next bg-white w-16 h-16 text-xs rounded-full text-purple-600">
+                                </div>
+                                <div class="swiper-pagination "></div>
+                            </div>
+
+                        </div>
+
+                        <div class="ml-2">
+                            <p class="px-4  text-xl font-semibold">Project info:</p>
+                            <p class="my-2 px-4 text-gray-800 text-base leading-relaxed">
+                                I always felt like I could do anything. That’s the main
+                                thing people are controlled by! Thoughts- their perception
+                                of themselves! They're slowed down by their perception of
+                                themselves. If you're taught you can’t do anything, you
+                                won’t do anything. I was taught I could do everything.
+                            </p>
+                            <p class="px-4 mt-8 text-xl font-semibold">My Role In The Project:</p>
+                            <p class="my-2 px-4 text-gray-800 text-base leading-relaxed">
+                                I devlope the backend of the project, and do some javascript for frontend development
+                            </p>
+
+                            <p class="px-4 mt-6 mb-4 text-xl font-semibold">Project Details:</p>
+
+                            <p class="px-4 mb-4"><span class="text-gray-800 font-semibold">Technologies:</span> Laravel,
+                                Vue, React,
+                                Node
+                            </p>
+
+                            <p class="px-4 mb-4"><span class="text-gray-800 font-semibold">Date:</span> Oct 8, 2020</p>
+
+                            <p class="px-4 mb-4"><span class="text-gray-800 font-semibold">URL:</span> <a
+                                    class="text-blue-600" href="google.com">
+                                    www.google.com
+                                </a>
+                            </p>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <!--footer-->
+                <div class="flex items-center justify-end p-6 border-t border-solid border-gray-300 rounded-b">
+                    <button
+                        class="text-purple-800 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
+                        type="button" style="transition: all .15s ease" onclick="toggleModal('modal-id')">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-backdrop"></div>
+
+
+
+
+    <footer class="bg-gradient-to-r from-blue-500 to-purple-600 px-10 py-6 text-center text-white">
+        <div>
+            Copyright © 2020 All rights reserved to <span class="">Benali Djamel</span>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script src="mixitup.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
